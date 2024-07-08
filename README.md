@@ -29,10 +29,18 @@ You will want to do the following steps to run the project :-
 3.  Now, we need testnet tokens in both the networks to run the transactions . For Obtaining Sepolia testnet token go to https://cloud.google.com/application/web3/faucet/ethereum/sepolia and for amoy testnet tokens go to https://faucet.polygon.technology/ (Joining Polygon Discord is required) and get the testnet tokens in both the networks.
 4. Clone the Github repository(make sure each file here is available).
 5. Open VS Code.
-6. Inside the project directory, in the terminal type: npm i and wait for it to complete.
+6. Inside the project directory, in the terminal type: `npm i` and wait for it to complete.
 7. Put your private key in .env file.
-8. Run 'npx hardhat run scripts/deploy.js --network sepolia' to deploy our contract.
-14. Project is successfully completed. 
+8. Run `npx hardhat run scripts/deploy.js --network sepolia` to deploy our contract.
+9. Paste the newly deployed contract address in the tokenAddress variable for the other scripts rather than getbalance.js
+10. Run `npx hardhat run scripts/mint.js --network sepolia` to mint NFTs to your wallet
+11. Run `npx hardhat run scripts/approveDeposit.js --network sepolia` to approve and deposit your NFTs to polygon
+12. Wait 20-30 minutes for NFTs to show on polygon account
+13. Use https://www.oklink.com/amoy to check your account for the NFTs. Once they arrive, you can click on the NFT Holdings and click on your NFT collection to get the contract address for polygon.
+14. Use the polygon contract address for your getBalance script's tokenAddress
+15. Run `npx hardhat run scripts/getBalance.js --network amoy` to see the new polygon NFT balance.
+16. Run `npx hardhat run scripts/prompt.js --network sepolia` to see all Token Urls of images and all prompts description that are used to generate that images in CO-PILOT .
+17. Project is successfully completed. 
  
 ## Author
 
