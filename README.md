@@ -15,6 +15,7 @@ This program is a simple contract written in Solidity, a programming language us
 8. Approve the NFTs to be transferred
 9. Deposit the NFTs to the Bridge
 10. Test balanceOf on Amoy 
+
 This program serves as a simple and straightforward introduction to Solidity programming, and can be used as a stepping stone for more complex projects in the future.
 
 ## Getting Started
