@@ -18,25 +18,20 @@ This program is a simple contract written in Solidity, a programming language us
 
 This program serves as a simple and straightforward introduction to Solidity programming, and can be used as a stepping stone for more complex projects in the future.
 
-## Getting Started
+# Getting Started
 
-# To run the entire project you can use this steps:
+## To run the project you can use this steps:
 
 You will want to do the following steps to run the project :-
 
 1. First of all , install the metamask wallet on Browser.
-2. Clone the Github repository(make sure each file here is available).
-3. Open VS Code.
-4. Inside the project directory, in the terminal type: npm i and wait for it to complete.
-5. Open two additional terminals in your VS code.
-6. In the second terminal type: npx hardhat node
-7. In Metamask , you have to Create a localhost network to run this project. In metamask , click on left upper side icon to change network , then click on "Add Network" button . After this , click on "Add a network manually" button . Then start filling details , choose Network name as your choice . In New RPC URL box , copy link from terminal ("http://127.0.0.1:8545/") and paste in box. Enter Chain ID as "31337" and Currency symbol as "ETH". Click on "Save" button . Localhost network is added and click on "Switch to your network name" button.
-8. In this we have to add an account to metamask . In metamask , Click on Account 1 drop-down menu and then click on "Add account or hardware wallet" button. After this , click on "Import account" button . choose select type as Private key and copy the private key of any account from the terminal(prefer Account #0 private key) and paste in the "Enter your private key string here:" box . click on Import button . Our Account is added to the Metamask.
-9. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-10. Copy deployed to "address" from terminal and paste it in index.js variable "contractAddress" .
-11. Back in the first terminal, type npm run dev to launch the front-end.
-12. open the URL link from terminal in the browser on which we have added metamask account , localhost network and Account.
-13. The project will be running on your localhost. Typically at http://localhost:3000/
+2. In Metamask , you have to Add sepolia and amoy test networks . For adding this , go to chainlist website (https://chainlist.org/?testnets=true) then click on Use Metamask button in the Pop-up and make sure the 'Include Testnets' checkbox is enabled . Then search for 11155111 chain ID in 'Search Networks'input field and then click on Add to Metamask button to add network to Metamask and then click on Approve button in the pop-up by Metacrafters. After this , search for 80002 chain ID in 'Search Networks'input field and then click on Add to Metamask button to add network to Metamask and then click on Approve button in the pop-up by Metacrafters . Both the Networks are added to our metamask wallet .
+3.  Now, we need testnet tokens in both the networks to run the transactions . For Obtaining Sepolia testnet token go to https://cloud.google.com/application/web3/faucet/ethereum/sepolia and for amoy testnet tokens go to https://faucet.polygon.technology/ (Joining Polygon Discord is required) and get the testnet tokens in both the networks.
+4. Clone the Github repository(make sure each file here is available).
+5. Open VS Code.
+6. Inside the project directory, in the terminal type: npm i and wait for it to complete.
+7. Put your private key in .env file.
+8. Run 'npx hardhat run scripts/deploy.js --network sepolia' to deploy our contract.
 14. Project is successfully completed. 
  
 ## Author
